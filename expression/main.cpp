@@ -13,17 +13,24 @@ int main() {
    std::cin >> b;
    std::cout << "\n";
 
-   std::cout << "Sum is: " << sum (a, b) << "\n";
-   std::cout << "Product is: " << product (a,b) << "\n";
-   std::cout << "Quotient is: " << quotient (a,b) << "\n";
-   std::cout << "Remainder is: " << remainder (a,b) << "\n";
+   int coding = sum(a,b);
+   int is = product(a,b);
+   int super = quotient(a,b);
+   int fun = remainder(a,b);
 
-   float f = a;
-   float g = b;
+   std::cout << "Sum is: " << coding << "\n";
+   std::cout << "Product is: " << is << "\n";
+   std::cout << "Quotient is: " << super << "\n";
+   std::cout << "Remainder is: " << fun << "\n";
 
-   std::cout << "Floating-point quotient is: " << pointQuotient (f,g) << "\n";
-   std::cout << "Average is: " << average(f,g) << "\n";
+    float f = a;
+    float g = b;
 
+    float hA = pointQuotient(f,g);
+    float hAA = average(f,g);
+
+    std::cout << "Floating-point quotient is: " << hA << "\n";
+    std::cout << "Average is: " << hAA << "\n";
 
 return 0;
 }
