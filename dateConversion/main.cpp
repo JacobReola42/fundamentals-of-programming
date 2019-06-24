@@ -2,29 +2,26 @@
 
 #include "Date.h"
 
-int main(){
+int main() {
 
-// declaring variables
-    int day,
-        month,
-        year;
+    int haha, 
+        very,
+        fun;
 
-// Create date object using Date class 
+// date object using Date class to access class methods
     Date date;
 
 // This bool utilizes set func. to notify user of incorrect date input 
     bool set = false;
 
-// loops the user until the correct input is utililzed
-    while(!set){
-        std::cout << "Please enter a integer of month, day, year: " << std::endl;
-        std::cin  >> month >> day >> year;
-        set = date.set(month,day,year);
+// loops the user until the correct input is true/set 
+    while(!set) {
+        std::cout << "Please enter a integer of month, day, year: \n";
+        std::cin >> haha >> very >> fun;
+        set = date.set(haha,very,fun); // lots of bool here
     }
     date.printNumeric();
     date.printAmerican();
     date.printEuropean();
-
-
     return 0;
 }
